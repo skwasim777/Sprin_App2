@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class Adress2 {
+	    private String nationality;
 		private String pincode;
 		private String area;
 		private String flatNo;
