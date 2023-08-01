@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="customer" class="com.customer.app.Customer">
+		<property name="cid" value="101"></property>
+		<property name="cname" value="Wasim Shaikh"></property>
+		<property name="email" value="wasim@gmail.com"></property>
+		<property name="mobile" value="9370823970"></property>
+	</bean>
+	<bean id="product" class="com.product.app.Product">
+
+		<property name="pid" value="001"></property>
+		<property name="name" value="Lenovo-thinkPad-T-Series"></property>
+		<property name="brand" value="Lenovo-CORE-i3"></property>
+		<property name="price" value="800000.00"></property>
+	</bean>
+		<bean id="order" class="com.order.app.Order">
+			<property name="orderId" value="ord-123-SN"></property>
+			<property name="product" ref="product"></property>
+			<property name="customr" ref="customer"></property>
+			<property name="netPrice" value="850000.00"></property>
+		</bean>
+</beans>
